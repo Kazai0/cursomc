@@ -1,5 +1,10 @@
 package br.com.cursomc;
 
+//Assim diz o Senhor: Maldito o homem que confia no homem, 
+//que faz daquilo mortal a sua força e 
+//afasta do do Senhor o seu coração
+
+
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,8 +48,7 @@ public class CursomcApplication implements CommandLineRunner{
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursomcApplication.class, args);
-	System.out.println("Teste");
-		
+
 	}
 
 	@Override
