@@ -43,7 +43,8 @@ public class CursomcApplication implements CommandLineRunner{
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursomcApplication.class, args);
-	
+	System.out.println("Teste");
+		
 	}
 
 	@Override
@@ -94,7 +95,7 @@ public class CursomcApplication implements CommandLineRunner{
 	enderecoRepository.saveAll(Arrays.asList(e1,e2));
 	
 	
-	
+
 		}
 	
 	
