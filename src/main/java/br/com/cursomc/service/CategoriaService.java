@@ -11,6 +11,7 @@ import org.springframework.data.querydsl.QPageRequest;
 import org.springframework.stereotype.Service;
 
 import br.com.cursomc.domain.Categoria;
+import br.com.cursomc.dto.CategoriaDTO;
 import br.com.cursomc.repositories.CategoriaRepository;
 import br.com.cursomc.service.exceptions.DataIntegrityException;
 import javassist.tools.rmi.ObjectNotFoundException;
@@ -60,4 +61,10 @@ public class CategoriaService {
 		PageRequest pageRequest =  PageRequest.of(page, linesPerPage, org.springframework.data.domain.Sort.Direction.valueOf(direction), orderBy);
 		return repo.findAll(pageRequest);
 	}
+	
+	public Categoria fromDTO(CategoriaDTO objtDto) {
+		return new Categoria(objtDto.getId(), objtDto.getNome());
+	}
+	
+	
 }
