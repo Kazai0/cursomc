@@ -30,8 +30,6 @@ public class CategoriaService {
 	}
 
 	public Categoria insert(Categoria obj) {
-		// id precisa ser nulo, se não o metodo save vai considerar que é uma
-		// atualização não uma insersão
 		obj.setId(null);
 		return repo.save(obj);
 	}
